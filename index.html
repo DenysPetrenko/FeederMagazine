@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>box</title>
+</head>
+<body>
+<div class="box">
+    <h2>Box model</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deserunt dolorum perferendis placeat
+        reiciendis. A cum dignissimos et nesciunt qui temporibus vitae voluptate voluptates. Atque delectus ipsa laborum
+        quam ut?</p>
+</div>
+<div class="box">
+    <h2>box model 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquid architecto aspernatur dicta dolore,
+        earum error excepturi fuga illum, ipsam labore libero necessitatibus perferendis, placeat quas sunt temporibus
+        voluptatem.</p>
+</div>
+
+<div>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis consequuntur dolorum eaque
+            eligendi, eos ex fugiat incidunt laborum nemo, nobis officia quibusdam quod rerum ullam. Libero nihil sit
+            tempora.
+        </li>
+        <li>A accusamus blanditiis commodi culpa, cumque cupiditate, doloribus enim nihil officia optio perspiciatis
+            quasi quod ratione sapiente voluptatibus? Animi aperiam atque, commodi cum cupiditate provident quod
+            reprehenderit similique voluptas voluptates.
+        </li>
+        <li>Aspernatur distinctio eum excepturi harum ipsum, libero nesciunt odio officiis pariatur perferendis
+            praesentium quo quod reiciendis reprehenderit repudiandae! Adipisci excepturi in laboriosam magni molestiae
+            nihil nulla perferendis porro qui veritatis.
+        </li>
+        <li>Aspernatur, blanditiis cum cumque delectus dicta id ipsa ipsum iste, nam necessitatibus quae rem
+            voluptatibus. Beatae distinctio id maiores! Alias aliquid corporis, cumque impedit libero magni molestiae
+            molestias neque numquam.
+        </li>
+        <li>Aliquid, asperiores autem deleniti, dignissimos eaque excepturi explicabo illum impedit inventore maxime
+            possimus sapiente suscipit vel voluptatem voluptatum. Aperiam, consequatur cupiditate dolorum est id iusto
+            nam perspiciatis saepe sunt temporibus.
+        </li>
+    </ul>
+
+</div>
+<script>
+    let a = 7;
+    console.log(a);
+    let b = new Promise(function (resolve, reject) {
+        setTimeout(() => {
+            resolve(a = 99);
+        });
+    })
+
+    b.then(function () {
+        console.log(a);
+    });
+
+    let c = 7;
+    console.log(c);
+    let g = new Promise(() => c = 100);
+    console.log(c);
+
+    function f1 () {
+   fetch('/test.php?d=1')
+        .then(data=>{
+            return data.text()
+        })
+        .then(data => {
+            console.log(data);
+        })
+    }
+    function f2 () {
+        console.log(2);
+    }
+    function f3 () {
+        console.log(3);
+    }
+
+    f1();
+    f2();
+    f3();
+
+</script>
+</body>
+</html>
